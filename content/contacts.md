@@ -7,17 +7,15 @@ title: "Контакты"
 
 ## Форма обратной связи
 
-<form action="https://formspree.io/f/xblabndq" method="POST">
+<form action="https://formspree.io/f/xblabndq" method="POST" class="contact-form">
   <label>
     Your email:
-    <input type="email" name="email">
+    <input type="email" name="email" placeholder="Введите ваш email" required>
   </label>
-  <br>
   <label>
     Your message:
-    <textarea name="message"></textarea>
+    <textarea name="message" placeholder="Введите ваше сообщение" required></textarea>
   </label>
-  <br>
-  <button type="submit">Send</button>
+  <button type="submit">Отправить</button>
 </form>
 
