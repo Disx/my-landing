@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office-Admin — IT-услуги для офисов</title>
+    <link>https://net-admin.pro/</link>
+    <description>Recent content on Office-Admin — IT-услуги для офисов</description>
+    <generator>Hugo</generator>
+    <language>ru-RU</language>
+    <atom:link href="https://net-admin.pro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Контакты</title>
+      <link>https://net-admin.pro/contacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://net-admin.pro/contacts/</guid>
+      <description>&lt;p&gt;Контакты 📞 Телефон: +375 (29) 640-57-19&lt;br&gt;&#xA;✉️ Email: &lt;a href=&#34;mailto:disx@yandex.ru&#34;&gt;disx@yandex.ru&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;форма-обратной-связи&#34;&gt;Форма обратной связи&lt;/h2&gt;&#xA;&lt;form action=&#34;https://formspree.io/f/xblabndq&#34; method=&#34;POST&#34;&gt;&#xD;&#xA;  &lt;label&gt;&#xD;&#xA;    Your email:&#xD;&#xA;    &lt;input type=&#34;email&#34; name=&#34;email&#34;&gt;&#xD;&#xA;  &lt;/label&gt;&#xD;&#xA;  &lt;br&gt;&#xD;&#xA;  &lt;label&gt;&#xD;&#xA;    Your message:&#xD;&#xA;    &lt;textarea name=&#34;message&#34;&gt;&lt;/textarea&gt;&#xD;&#xA;  &lt;/label&gt;&#xD;&#xA;  &lt;br&gt;&#xD;&#xA;  &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;&#xD;&#xA;&lt;/form&gt;</description>
+    </item>
+  </channel>
+</rss>
