@@ -1,0 +1,4 @@
+baseURL = "https://net-admin.pro/"
+languageCode = "ru-RU"
+title = "Office-Admin — IT-услуги для офисов"
+theme = "ananke"   # можно любой минималистичный, поддерживающий адаптив
