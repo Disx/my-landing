@@ -1,4 +1,4 @@
-baseURL = "https://net-admin.pro/"
+baseURL = "https://office-admin.by/"
 languageCode = "ru-by"
 title = "Office-Admin — системное администрирование и IT-аутсорсинг в Минске"
 enableRobotsTXT = false   # robots.txt отдаём свой из static/
@@ -16,7 +16,7 @@ timeZone = "Europe/Minsk"
   phoneDisplay = "+375 (29) 640-57-19"
   phoneHref = "+375296405719"
   email = "disx@yandex.ru"
-  telegram = ""            # напр. "dis_uuid" (без @) — оставь пустым, если не нужен
+  telegram = "is_xmr"            # напр. "dis_uuid" (без @) — оставь пустым, если не нужен
   # ── Локальное SEO: ОБЯЗАТЕЛЬНО ЗАПОЛНИТЬ ──
   city = "Минск"           # для локального SEO
   region = "Беларусь"

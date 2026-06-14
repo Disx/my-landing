@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://net-admin.pro/sitemap.xml
+Sitemap: https://office-admin.by/sitemap.xml
