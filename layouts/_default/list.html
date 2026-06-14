@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section>
+  <div class="wrap" style="max-width:760px">
+    <span class="eyebrow">{{ .Title }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}{{ . }}{{ end }}
+    <ul class="post-list" style="margin-top:32px">
+      {{ range .Pages.ByDate.Reverse }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            <span class="date">{{ .Date.Format "02.01.2006" }}</span>
+            <h3 style="margin:.3rem 0 .3rem">{{ .Title }}</h3>
+            <p style="color:var(--muted);margin:0">{{ .Description | default .Summary | plainify | truncate 140 }}</p>
+          </a>
+        </li>
+      {{ else }}
+        <li><p style="color:var(--muted)">Скоро здесь появятся заметки по системному администрированию и безопасности.</p></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

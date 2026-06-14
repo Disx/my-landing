@@ -1,0 +1,142 @@
+{{ define "main" }}
+
+<!-- ───────────── HERO ───────────── -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <span class="eyebrow">Системный администратор · IT-аутсорсинг · Минск</span>
+        <h1>Ваша IT-инфраструктура работает — а вы занимаетесь бизнесом</h1>
+        <p class="lead">Беру на себя серверы, сети, рабочие места и безопасность вашего офиса. Без своего штата сисадминов, с прозрачной реакцией на заявки и понятной отчётностью.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Оставить заявку</a>
+          <a class="btn btn--ghost" href="tel:+{{ .Site.Params.phoneHref }}">{{ .Site.Params.phoneDisplay }}</a>
+        </div>
+        <div class="hero-meta">
+          <div class="item"><b>&lt; 1 ч</b>реакция на заявку</div>
+          <div class="item"><b>24/7</b>мониторинг систем</div>
+          <div class="item"><b>10+ лет</b>в эксплуатации</div>
+        </div>
+      </div>
+
+      <div class="reveal in">
+        <div class="console" aria-hidden="true">
+          <div class="console-bar">
+            <span class="c r"></span><span class="c y"></span><span class="c g"></span>
+            <span>infra@office: ~</span>
+          </div>
+          <div class="console-body">
+            <div class="row"><span class="svc">servers.service</span><span class="st">running</span></div>
+            <div class="row"><span class="svc">backup.timer</span><span class="st">active</span></div>
+            <div class="row"><span class="svc">network.target</span><span class="st">online</span></div>
+            <div class="row"><span class="svc">security.scan</span><span class="st">passed</span></div>
+            <div class="row"><span class="svc">helpdesk.queue</span><span class="st">0 open</span></div>
+            <div class="prompt">$ <span class="accent">uptime</span> — стабильно<span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── УСЛУГИ ───────────── -->
+<section id="uslugi">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Услуги</span>
+      <h2>Полное сопровождение IT — от одной задачи до всей инфраструктуры</h2>
+      <p class="lead">Можно отдать всё «под ключ» по абонентскому договору или взять отдельную услугу под конкретную задачу.</p>
+    </div>
+    <div class="grid grid-3">
+      {{ range .Site.Data.services }}
+      <article class="card reveal">
+        <div class="ico">{{ .code }}</div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── КАК РАБОТАЕМ ───────────── -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Как работаем</span>
+      <h2>Прозрачный процесс без сюрпризов в счёте</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><h3>Аудит</h3><p>Бесплатно осматриваю инфраструктуру и фиксирую риски и точки роста.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>Договор</h3><p>Согласуем объём работ, время реакции и стоимость. Фикс, без скрытых платежей.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>Обслуживание</h3><p>Решаю заявки, веду мониторинг и плановое обслуживание, предупреждаю сбои.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3>Отчётность</h3><p>Раз в месяц — понятный отчёт: что сделано, состояние систем, что планируем.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── ПОЧЕМУ ───────────── -->
+<section id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Почему я</span>
+      <h2>Инженер, а не «приходящий специалист»</h2>
+    </div>
+    <ul class="checks reveal">
+      <li>Реакция на критичные заявки в течение часа<span>удалённо — сразу, с выездом — по договору</span></li>
+      <li>Дешевле штатного сисадмина<span>платите за результат, а не за рабочее место</span></li>
+      <li>Документирую инфраструктуру<span>вы не привязаны к одному человеку и его памяти</span></li>
+      <li>Информационная безопасность по умолчанию<span>обновления, резервные копии, контроль доступа</span></li>
+      <li>Автоматизация рутины<span>меньше ручных действий — меньше ошибок и простоев</span></li>
+      <li>Работаю на результат, а не на часы<span>прозрачная отчётность по каждому периоду</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────── КОНТАКТЫ / ФОРМА ───────────── -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Контакты</span>
+        <h2>Расскажите о задаче</h2>
+        <p>Опишите, что нужно — отвечу в течение рабочего дня и предложу решение. Обслуживаю офисы в Минске и пригороде. Аудит инфраструктуры бесплатный.</p>
+        <p class="line"><a href="tel:+{{ .Site.Params.phoneHref }}">{{ .Site.Params.phoneDisplay }}</a></p>
+        <p class="line"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+        {{ with .Site.Params.telegram }}<p class="line"><a href="https://t.me/{{ . }}" rel="noopener">Telegram: @{{ . }}</a></p>{{ end }}
+      </div>
+
+      <div class="reveal">
+        <!-- Web3Forms: вставь свой ключ в access_key (см. README). -->
+        <form id="contact-form" class="form" novalidate>
+          <input type="hidden" name="access_key" value="264fc5ba-82f1-466e-afc1-54ab1281c2ab">
+          <input type="hidden" name="subject" value="Заявка с сайта net-admin.pro">
+          <input type="hidden" name="from_name" value="Сайт net-admin.pro">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+          <div>
+            <label for="f-name">Имя</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div>
+            <label for="f-org">Организация</label>
+            <input id="f-org" name="organization" type="text" autocomplete="organization">
+          </div>
+          <div>
+            <label for="f-phone">Телефон</label>
+            <input id="f-phone" name="phone" type="tel" required autocomplete="tel">
+          </div>
+          <div>
+            <label for="f-msg">Что нужно сделать</label>
+            <textarea id="f-msg" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Отправить заявку</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="note">Нажимая кнопку, вы соглашаетесь на обработку контактных данных для ответа на обращение.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

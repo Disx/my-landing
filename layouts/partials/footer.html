@@ -1,4 +1,14 @@
-<footer>
-  <p>© 2025 Office-Admin. Все права защищены.</p>
-  <p><a href="https://office-admin.by">Основной сайт</a></p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="mono" style="color:var(--text)">net-admin<b style="color:var(--accent)">.pro</b></div>
+      <p>{{ .Site.Params.businessName }} — {{ .Site.Params.tagline }}{{ with .Site.Params.city }}, {{ . }}{{ end }}.</p>
+      <p>© <span id="year">2025</span> {{ .Site.Params.businessName }}</p>
+    </div>
+    <div class="mono">
+      <div><a href="tel:+{{ .Site.Params.phoneHref }}">{{ .Site.Params.phoneDisplay }}</a></div>
+      <div><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
+      {{ with .Site.Params.telegram }}<div><a href="https://t.me/{{ . }}" rel="noopener">@{{ . }}</a></div>{{ end }}
+    </div>
+  </div>
 </footer>

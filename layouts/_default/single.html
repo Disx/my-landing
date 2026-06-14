@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="article">
+  <div class="wrap">
+    <div class="meta">
+      <a href="/blog/" style="color:var(--accent)">‹ Заметки</a> ·
+      {{ .Date.Format "02.01.2006" }} · {{ .ReadingTime }} мин
+    </div>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <p style="margin-top:48px"><a class="btn" href="/#contact">Нужна помощь с этим — оставить заявку</a></p>
+  </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "author": { "@type": "Organization", "name": "{{ .Site.Params.businessName }}" },
+  "publisher": { "@type": "Organization", "name": "{{ .Site.Params.businessName }}" },
+  "mainEntityOfPage": "{{ .Permalink }}"
+}
+</script>
+{{ end }}

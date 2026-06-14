@@ -1,0 +1,55 @@
+baseURL = "https://net-admin.pro/"
+languageCode = "ru-by"
+title = "Office-Admin — системное администрирование и IT-аутсорсинг в Минске"
+enableRobotsTXT = false   # robots.txt отдаём свой из static/
+enableEmoji = true
+timeZone = "Europe/Minsk"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  # ── Контакты и реквизиты — ЕДИНЫЙ ИСТОЧНИК ПРАВДЫ ──
+  businessName = "Office-Admin"
+  tagline = "IT-аутсорсинг и системное администрирование для офисов"
+  description = "Системное администрирование, IT-аутсорсинг и сопровождение компьютерной инфраструктуры для малого и среднего бизнеса: серверы, сети, рабочие места, информационная безопасность."
+  phoneDisplay = "+375 (29) 640-57-19"
+  phoneHref = "+375296405719"
+  email = "disx@yandex.ru"
+  telegram = ""            # напр. "dis_uuid" (без @) — оставь пустым, если не нужен
+  # ── Локальное SEO: ОБЯЗАТЕЛЬНО ЗАПОЛНИТЬ ──
+  city = "Минск"           # для локального SEO
+  region = "Беларусь"
+  country = "BY"
+  showAddress = false      # true + address ниже, если есть офис с приёмом
+  address = ""             # напр. "ул. Примерная, 1, оф. 10"
+  # ── Прочее ──
+  ogImage = "/img/og.png"  # положи картинку 1200×630 в static/img/og.png
+
+[menu]
+  [[menu.main]]
+    name = "Услуги"
+    url = "/#uslugi"
+    weight = 10
+  [[menu.main]]
+    name = "Как работаем"
+    url = "/#process"
+    weight = 20
+  [[menu.main]]
+    name = "Заметки"
+    url = "/blog/"
+    weight = 30
+  [[menu.main]]
+    name = "Контакты"
+    url = "/#contact"
+    weight = 40
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true   # разрешить HTML внутри markdown статей
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.6
