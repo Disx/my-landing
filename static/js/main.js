@@ -56,12 +56,11 @@
       })
         .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
         .then(function (res) {
-          if (res.success) {
-            form.reset();
-            setStatus("Заявка отправлена. Свяжемся в течение рабочего дня.", "ok");
-          } else {
-            setStatus("Не удалось отправить. Напишите на email или позвоните.", "err");
-          }
+        if (res.success) {
+  form.reset();
+  if (window.ym) ym(105088641, 'reachGoal', 'lead');
+  setStatus("Заявка отправлена. Свяжемся в течение рабочего дня.", "ok");
+}	
         })
         .catch(function () {
           setStatus("Сеть недоступна. Напишите на email или позвоните.", "err");
