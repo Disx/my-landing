@@ -14,17 +14,18 @@ timeZone = "Europe/Minsk"
   tagline = "IT-аутсорсинг и системное администрирование для офисов"
   description = "Системное администрирование, IT-аутсорсинг и сопровождение компьютерной инфраструктуры для малого и среднего бизнеса: серверы, сети, рабочие места, информационная безопасность."
   phoneDisplay = "+375 (29) 640-57-19"
-  phoneHref = "+375296405719"
+  phoneHref = "375296405719"   # без + — шаблон добавит его сам
   email = "disx@yandex.ru"
-  telegram = "is_xmr"            # напр. "dis_uuid" (без @) — оставь пустым, если не нужен
-  # ── Локальное SEO: ОБЯЗАТЕЛЬНО ЗАПОЛНИТЬ ──
-  city = "Минск"           # для локального SEO
+  telegram = "is_xmr"          # без @
+  # ── Локальное SEO ──
+  city = "Минск"
   region = "Беларусь"
   country = "BY"
-  showAddress = false      # true + address ниже, если есть офис с приёмом
-  address = ""             # напр. "ул. Примерная, 1, оф. 10"
+  showAddress = false
+  address = ""
   # ── Прочее ──
-  ogImage = "/img/og.png"  # положи картинку 1200×630 в static/img/og.png
+  ogImage = "/img/og.png"
+  metrikaId = "105088641"      # Яндекс.Метрика
 
 [menu]
   [[menu.main]]
