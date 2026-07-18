@@ -1,0 +1,30 @@
+name: Build check
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        id: build
+        run: hugo --minify
+
+      - name: Notify n8n on failure
+        if: failure()
+        run: |
+          CHANGED_FILE=$(git diff --name-only HEAD~1 HEAD | grep '^content/' | head -n1)
+          curl -X POST "${{ secrets.N8N_BUILD_FAIL_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
+            -d "{\"sha\": \"${{ github.sha }}\", \"file\": \"$CHANGED_FILE\", \"run_url\": \"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"}"
