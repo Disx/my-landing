@@ -75,3 +75,8 @@ description: "Узнайте, как комплексная IT-поддержк�
 * [Настройка Wi-Fi в офисе](/office-wifi-setup)
 * [Обслуживание серверов](/server-maintenance)
 * [Резервное копирование данных](/data-backup)
+
+### Связанные услуги
+* [Настройка Wi-Fi в офисе](/office-wifi-setup)
+* [Обслуживание серверов](/server-maintenance)
+* [Резервное копирование данных](/data-backup)
