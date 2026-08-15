@@ -21,3 +21,44 @@
     </div>
   </div>
 </footer>
+
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <button id="contactButton" style="background-color: var(--accent); color: white; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 30px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">💬</button>
+  <div id="contactMenu" style="display: none; position: absolute; bottom: 70px; right: 0; background-color: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 10px; width: 200px;">
+    <a href="tel:+375296405719" style="display: flex; align-items: center; padding: 10px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Phone_icon_svg.svg/1200px-Phone_icon_svg.svg.png" alt="Phone" style="width: 24px; height: 24px; margin-right: 10px;"> Позвонить
+    </a>
+    <a href="https://t.me/is_xmr" target="_blank" rel="noopener" style="display: flex; align-items: center; padding: 10px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png" alt="Telegram" style="width: 24px; height: 24px; margin-right: 10px;"> Telegram
+    </a>
+    <a href="viber://chat?number=+375296405719" style="display: flex; align-items: center; padding: 10px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Viber_logo.svg/1200px-Viber_logo.svg.png" alt="Viber" style="width: 24px; height: 24px; margin-right: 10px;"> Viber
+    </a>
+    <a href="https://wa.me/375296405719" target="_blank" rel="noopener" style="display: flex; align-items: center; padding: 10px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 24px; height: 24px; margin-right: 10px;"> WhatsApp
+    </a>
+    <a href="mailto:disx@yandex.ru" style="display: flex; align-items: center; padding: 10px; text-decoration: none; color: #333;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Email" style="width: 24px; height: 24px; margin-right: 10px;"> Email
+    </a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('contactButton').addEventListener('click', function() {
+    var menu = document.getElementById('contactMenu');
+    if (menu.style.display === 'none') {
+      menu.style.display = 'block';
+    } else {
+      menu.style.display = 'none';
+    }
+  });
+
+  // Закрыть меню при клике вне его
+  document.addEventListener('click', function(event) {
+    var button = document.getElementById('contactButton');
+    var menu = document.getElementById('contactMenu');
+    if (!button.contains(event.target) && !menu.contains(event.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
