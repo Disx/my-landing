@@ -44,18 +44,10 @@
 </div>
 
 <script>
-  // ID счётчика Яндекс.Метрики (первый найденный на странице)
+  // ID счётчика Яндекс.Метрики
   function ymReach(goal) {
-    if (typeof ym === 'function' && window.Ya && window.Ya._metrika && window.Ya._metrika.counters) {
-      window.Ya._metrika.counters.forEach(function(c) {
-        try { ym(c.id, 'reachGoal', goal); } catch (e) {}
-      });
-    } else if (typeof ym === 'function') {
-      // Фолбэк: пытаемся достать id из глобальной переменной или атрибута
-      var counterId = (window.yaCounterId) || (window.metrikaId);
-      if (counterId) {
-        try { ym(counterId, 'reachGoal', goal); } catch (e) {}
-      }
+    if (typeof ym === 'function') {
+      try { ym(105088641, 'reachGoal', goal); } catch (e) {}
     }
   }
 
