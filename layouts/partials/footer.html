@@ -45,9 +45,9 @@
 
 <script>
   // ID счётчика Яндекс.Метрики
-  function ymReach(goal) {
+function ymReach(goal) {
     if (typeof ym === 'function') {
-      try { ym(105088641, 'reachGoal', goal); }
+      try { ym(105088641, 'reachGoal', goal); } catch (e) {}
     }
   }
 
