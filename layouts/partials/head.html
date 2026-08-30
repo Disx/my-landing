@@ -10,7 +10,6 @@
   <title>{{ $title }}</title>
   <meta name="description" content="{{ $desc }}">
   <link rel="canonical" href="{{ .Permalink }}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0B0F14">
 
   <!-- Open Graph -->
@@ -70,5 +69,12 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/{{ .Site.Params.metrikaId }}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+  {{ end }}
+
+  <!-- Robots -->
+  {{ if or .Params.noindex (eq .Params.robots "noindex") }}
+  <meta name="robots" content="noindex, follow">
+  {{ else }}
+  <meta name="robots" content="index, follow, max-image-preview:large">
   {{ end }}
 </head>
