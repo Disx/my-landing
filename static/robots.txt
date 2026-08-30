@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-
-User-agent: Googlebot
-Allow: /
 
 Sitemap: https://office-admin.by/sitemap.xml
