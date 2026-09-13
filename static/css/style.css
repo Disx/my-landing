@@ -1,4 +1,4 @@
-/* net-admin.pro — SYSADMIN / IT-аутсорсинг
+/* office-admin.by — SYSADMIN / IT-аутсорсинг
    Тёмная терминальная эстетика, янтарный акцент.
    Один источник правды по цветам и типографике. */
 
@@ -151,6 +151,19 @@ section:first-of-type { border-top: 0; }
   transition: border-color .2s ease, transform .2s ease;
 }
 .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+/* карточка-ссылка (услуги на главной) */
+.card--link { display: block; color: inherit; text-decoration: none; }
+.card--link h3 { color: var(--text); transition: color .2s ease; }
+.card--link:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.card-cta {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: var(--mono);
+  font-size: .9rem;
+  color: var(--accent);
+  transition: transform .2s ease;
+}
+.card--link:hover .card-cta { transform: translateX(4px); }
 .card .ico { font-family: var(--mono); color: var(--accent); font-size: .82rem; letter-spacing: .1em; margin-bottom: 14px; }
 .card h3 { margin-bottom: .5rem; }
 .card p { color: var(--muted); font-size: .98rem; margin: 0; }
