@@ -47,13 +47,14 @@
       <h2>Полное сопровождение IT — от одной задачи до всей инфраструктуры</h2>
       <p class="lead">Можно отдать всё «под ключ» по абонентскому договору или взять отдельную услугу под конкретную задачу.</p>
     </div>
-    <div class="grid grid-3">
+     <div class="grid grid-3">
       {{ range .Site.Data.services }}
-      <article class="card reveal">
+      <a class="card reveal card--link" href="{{ .href }}">
         <div class="ico">{{ .code }}</div>
         <h3>{{ .title }}</h3>
         <p>{{ .text }}</p>
-      </article>
+        <span class="card-cta">Подробнее →</span>
+      </a>
       {{ end }}
     </div>
   </div>
