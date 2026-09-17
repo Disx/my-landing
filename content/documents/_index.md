@@ -16,7 +16,7 @@ description: "Образец договора на IT-услуги и докум
 
 Периодически прохожу курсы повышения квалификации по информационной безопасности и защите данных.
 
-<div style="display:flex;flex-wrap:wrap;gap:20px;margin-top:24px;">
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:24px;">
   <img src="/certificates/cert-infobez-svid.jpg" alt="Свидетельство о повышении квалификации — обеспечение безопасности информационных технологий" style="max-width:280px;width:100%;border-radius:8px;border:1px solid #333;">
   <img src="/certificates/cert-infobez-decor.jpg" alt="Сертификат — обеспечение безопасности информационных технологий" style="max-width:280px;width:100%;border-radius:8px;border:1px solid #333;">
   <img src="/certificates/cert-kriptografia.jpg" alt="Свидетельство о повышении квалификации — криптографическая защита информации" style="max-width:280px;width:100%;border-radius:8px;border:1px solid #333;">
