@@ -37,7 +37,7 @@ timeZone = "Europe/Minsk"
     url = "/#process"
     weight = 20
   [[menu.main]]
-    name = "Заметки"
+    name = "Блог"
     url = "/blog/"
     weight = 30
   [[menu.main]]
