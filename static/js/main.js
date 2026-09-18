@@ -38,9 +38,17 @@
   var form = document.querySelector("#contact-form");
   if (form) {
     var statusEl = form.querySelector(".form-status");
-    form.addEventListener("submit", function (e) {
+        form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (form.querySelector('[name="botcheck"]') && form.querySelector('[name="botcheck"]').checked) return;
+
+      var required = form.querySelectorAll("[required]");
+      var missing = false;
+      required.forEach(function (f) { if (!f.value.trim()) missing = true; });
+      if (missing) {
+        setStatus("Заполните имя, телефон и описание задачи.", "err");
+        return;
+      }
 
       var btn = form.querySelector('button[type="submit"]');
       var oldText = btn ? btn.textContent : "";
