@@ -2,6 +2,7 @@ baseURL = "https://office-admin.by/"
 languageCode = "ru-by"
 title = "Office-Admin — системное администрирование и IT-аутсорсинг в Минске"
 enableRobotsTXT = false   # robots.txt отдаём свой из static/
+disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 timeZone = "Europe/Minsk"
 
