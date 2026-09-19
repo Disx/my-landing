@@ -17,7 +17,7 @@
     <div class="mono">
       <div><a href="tel:+{{ .Site.Params.phoneHref }}">{{ .Site.Params.phoneDisplay }}</a></div>
       <div><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
-      {{ with .Site.Params.telegram }}<div><a href="https://t.me/{{ . }}" rel="noopener">@{{ . }}</a></div>{{ end }}
+      <div><a href="https://t.me/+{{ .Site.Params.phoneHref }}" rel="noopener">Telegram</a></div>
     </div>
   </div>
 </footer>
