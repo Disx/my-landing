@@ -4,10 +4,11 @@ title = "Office-Admin — системное администрирование 
 enableRobotsTXT = false   # robots.txt отдаём свой из static/
 disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
-[frontmatter]
-  lastmod = [":git", "lastmod", "date", "publishDate"]
 enableEmoji = true
 timeZone = "Europe/Minsk"
+
+[frontmatter]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
 
 [pagination]
   pagerSize = 10
