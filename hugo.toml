@@ -16,7 +16,6 @@ timeZone = "Europe/Minsk"
   phoneDisplay = "+375 (29) 640-57-19"
   phoneHref = "375296405719"   # без + — шаблон добавит его сам
   email = "info@office-admin.by"
-  telegram = "is_xmr"          # без @
   # ── Локальное SEO ──
   city = "Минск"
   region = "Беларусь"
