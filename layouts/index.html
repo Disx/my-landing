@@ -125,7 +125,7 @@
         <p>Опишите задачу — ответим в течение рабочего дня и предложим решение. Обслуживаем организации и частных лиц в Минске и пригороде, удалённо — по всей Беларуси. Аудит инфраструктуры бесплатный.</p>
         <p class="line"><a href="tel:+{{ .Site.Params.phoneHref }}">{{ .Site.Params.phoneDisplay }}</a></p>
         <p class="line"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
-        {{ with .Site.Params.telegram }}<p class="line"><a href="https://t.me/{{ . }}" rel="noopener">Telegram: @{{ . }}</a></p>{{ end }}
+        <p class="line"><a href="https://t.me/+{{ .Site.Params.phoneHref }}" rel="noopener">Написать в Telegram</a></p>
       </div>
 
       <div class="reveal">
