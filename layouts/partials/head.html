@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{- $isHome := .IsHome -}}
-  {{- $title := cond $isHome .Site.Title (printf "%s | %s" .Title .Site.Title) -}}
+  {{- $title := cond $isHome (.Title | default .Site.Title) (printf "%s | %s" .Title .Site.Title) -}}
   {{- $desc := .Description | default .Summary | default .Site.Params.description -}}
   {{- $desc = $desc | plainify | chomp -}}
 
