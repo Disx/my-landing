@@ -1,6 +1,6 @@
 baseURL = "https://office-admin.by/"
 languageCode = "ru-by"
-title = "Office-Admin — автоматизация бизнеса и IT-обслуживание в Минске"
+title = "Office-Admin - автоматизация бизнеса и IT-обслуживание в Минске"
 enableRobotsTXT = false   # robots.txt отдаём свой из static/
 disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
