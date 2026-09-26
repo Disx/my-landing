@@ -52,8 +52,7 @@
     "priceRange": "$$",
     {{ with .Site.Params.address }}{{ if $.Site.Params.showAddress }}"address": { "@type": "PostalAddress", "streetAddress": "{{ . }}", "addressLocality": "{{ $.Site.Params.city }}", "addressCountry": "{{ $.Site.Params.country }}" },{{ end }}{{ end }}
     {{ with .Site.Params.city }}"areaServed": { "@type": "City", "name": "{{ . }}" },{{ end }}
-    "serviceType": ["IT-аутсорсинг", "Системное администрирование", "Настройка серверов", "Настройка сетей", "Информационная безопасность", "Резервное копирование"]
-  }
+    "serviceType": ["Автоматизация бизнес-процессов", "Разработка чат-ботов", "Внедрение AI-агентов", "Системное администрирование", "Настройка серверов", "Настройка сетей", "Резервное копирование", "Информационная безопасность", "Разработка сайтов"]  }
   </script>
   {{ if .IsHome }}
   <script type="application/ld+json">
