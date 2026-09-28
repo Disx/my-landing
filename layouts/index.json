@@ -1,0 +1,8 @@
+{{- $pages := slice -}}
+{{- range where .Site.Pages "Kind" "in" (slice "page" "section") -}}
+  {{- $desc := .Description | default .Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 200 -}}
+  {{- $date := "" -}}
+  {{- if not .Date.IsZero -}}{{- $date = .Date.Format "2006-01-02" -}}{{- end -}}
+  {{- $pages = $pages | append (dict "url" .RelPermalink "title" .Title "description" $desc "section" .Section "kind" .Kind "date" $date) -}}
+{{- end -}}
+{{- dict "generated" (now.Format "2006-01-02T15:04:05Z07:00") "count" (len $pages) "pages" $pages | jsonify (dict "indent" " ") -}}
