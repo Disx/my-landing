@@ -50,7 +50,7 @@ timeZone = "Europe/Minsk"
     weight = 40
 
 [outputs]
-  home = ["HTML", "RSS"]
+    home = ["HTML", "RSS", "JSON"]
 
 [markup.goldmark.renderer]
   unsafe = true   # разрешить HTML внутри markdown статей
