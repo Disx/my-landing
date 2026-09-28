@@ -1,3 +1,9 @@
 public/
 resources/
 .hugo_build.lock
+
+# Локальные файлы с личным контекстом — не коммитить
+office-admin_prompt.md
+CLAUDE.md
+CLAUDE.local.md
+*.local.md
