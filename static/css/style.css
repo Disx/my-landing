@@ -1,4 +1,4 @@
-/* office-admin.by — SYSADMIN / IT-аутсорсинг
+/* office-admin.by – SYSADMIN / IT-аутсорсинг
    Тёмная терминальная эстетика, янтарный акцент.
    Один источник правды по цветам и типографике. */
 
@@ -10,7 +10,7 @@
   --line-soft: #1A2230;
   --text:      #E6EDF3;
   --muted:     #8B98A8;
-  --accent:    #F2A93B;          /* янтарь — главный акцент */
+  --accent:    #F2A93B;          /* янтарь – главный акцент */
   --accent-2:  #FFC76B;
   --accent-soft: rgba(242,169,59,.12);
   --ok:        #4FB477;          /* только статус-индикаторы */
@@ -36,7 +36,7 @@ body {
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  /* очень слабая сетка фоном — намёк на терминал */
+  /* очень слабая сетка фоном – намёк на терминал */
   background-image:
     linear-gradient(rgba(255,255,255,.012) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.012) 1px, transparent 1px);
@@ -116,7 +116,7 @@ section:first-of-type { border-top: 0; }
 .hero-meta .item { font-family: var(--mono); font-size: .85rem; color: var(--muted); }
 .hero-meta .item b { display: block; font-size: 1.5rem; color: var(--text); letter-spacing: -.02em; }
 
-/* консоль статуса — фирменный элемент */
+/* консоль статуса – фирменный элемент */
 .console {
   background: var(--surface-2);
   border: 1px solid var(--line);
