@@ -254,3 +254,19 @@ section:first-of-type { border-top: 0; }
   .grid-3, .steps { grid-template-columns: 1fr; }
   body { font-size: 16px; }
 }
+
+/* ---------- reviews ---------- */
+.reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.review { margin: 0; display: flex; flex-direction: column; justify-content: space-between; }
+.review:hover { transform: none; }
+.review blockquote { margin: 0; font-style: italic; color: var(--text); }
+.review figcaption { margin-top: 14px; color: var(--muted); font-size: .92rem; }
+.reviews-more { margin-top: 20px; font-family: var(--mono); font-size: .92rem; }
+/* на телефоне – горизонтальная лента, листается пальцем */
+@media (max-width: 860px) {
+  .reviews { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding-bottom: 8px; }
+  .review { flex: 0 0 85%; scroll-snap-align: start; }
+}
+/* на странице /reviews/ – столбиком */
+.reviews-page .reviews { display: grid; grid-template-columns: 1fr; overflow: visible; }
+.reviews-page .review { flex: none; }

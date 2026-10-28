@@ -1,0 +1,11 @@
+{{- /* Карточки отзывов из data/reviews.yaml. Параметр: limit (0 – все). */ -}}
+{{- $items := site.Data.reviews -}}
+{{- with .limit }}{{ $items = first . $items }}{{ end -}}
+<div class="reviews">
+  {{- range $items }}
+  <figure class="card review">
+    <blockquote>«{{ .text }}»</blockquote>
+    <figcaption>– {{ .author }}{{ with .company }}, {{ . }}{{ end }}</figcaption>
+  </figure>
+  {{- end }}
+</div>

@@ -2,8 +2,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {{- $isHome := .IsHome -}}
-  {{- $title := cond $isHome (.Title | default .Site.Title) (printf "%s | %s" .Title .Site.Title) -}}
+  {{- /* Title: seoTitle (если задан) или Title + " | Office-Admin".
+         Если с брендом выходит длиннее 70 символов – бренд не добавляем, чтобы title не обрезался в выдаче. */ -}}
+  {{- $brand := .Site.Params.businessName -}}
+  {{- $base := .Params.seoTitle | default .Title | default .Site.Title -}}
+  {{- $title := printf "%s | %s" $base $brand -}}
+  {{- if or (strings.Contains $base $brand) (gt (strings.RuneCount $title) 70) -}}
+    {{- $title = $base -}}
+  {{- end -}}
   {{- $desc := .Description | default .Summary | default .Site.Params.description -}}
   {{- $desc = $desc | plainify | chomp -}}
 

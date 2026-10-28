@@ -139,6 +139,20 @@
   </div>
 </section>
 
+<!-- ───────────── ОТЗЫВЫ ───────────── -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Отзывы</span>
+      <h2>Что говорят клиенты</h2>
+    </div>
+    <div class="reveal">
+      {{ partial "reviews.html" (dict "limit" 3) }}
+    </div>
+    <p class="reviews-more"><a href="/reviews/">Все отзывы ›</a></p>
+  </div>
+</section>
+
 <!-- ───────────── КОНТАКТЫ / ФОРМА ───────────── -->
 <section id="contact">
   <div class="wrap">
