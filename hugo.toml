@@ -1,6 +1,6 @@
 baseURL = "https://office-admin.by/"
 languageCode = "ru-by"
-title = "Office-Admin - автоматизация бизнеса, веб-разработка и IT-обслуживание в Минске"
+title = "Office-Admin - автоматизация бизнеса, веб-системы (SaaS) и IT-сопровождение в Минске"
 enableRobotsTXT = false   # robots.txt отдаём свой из static/
 disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
@@ -28,7 +28,7 @@ timeZone = "Europe/Minsk"
   showAddress = false
   address = ""
   # ── Прочее ──
-  ogImage = "/img/og-office-admin.png"
+  ogImage = "/img/og-office-admin-v2.png"
   metrikaId = "105088641"      # Яндекс.Метрика
 
 [menu]
