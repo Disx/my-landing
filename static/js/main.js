@@ -1,4 +1,4 @@
-/* net-admin.pro – интерактив */
+/* office-admin.by – интерактив */
 (function () {
   "use strict";
 
